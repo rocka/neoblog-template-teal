@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        block head
+            meta(name="theme-color" content="#009688")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            if head && head.title
+                title #{config.title} | #{head.title}
+            else
+                title #{config.title}
+            style .header { background-image: url(#{assets('header.jpg')}); }
+            link(rel="stylesheet", href=assets('style.css'))
+            link(rel="stylesheet", href=assets('highlight.css'))
+    body
+        block nav
+            include nav
+        div(class="content")
+            div(class="main")
+                block content
+            block side
+                include side
+        block footer
+            include footer
