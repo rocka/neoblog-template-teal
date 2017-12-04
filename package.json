@@ -1,0 +1,17 @@
+{
+  "name": "neoblog-template-teal",
+  "version": "1.0.0",
+  "description": "template `teal` for neoblog",
+  "scripts": {
+    "start": "neoblog"
+  },
+  "keywords": [
+    "neoblog",
+    "neoblog-template"
+  ],
+  "author": "rocka <i@rocka.me>",
+  "license": "MIT",
+  "dependencies": {
+    "neoblog": "../neoblog"
+  }
+}
