@@ -158,13 +158,13 @@ aside {
 .side-box-item {
     color: #444444;
     overflow: hidden;
-    border-bottom: 1px solid rgba(230,230,230);
+    border-bottom: 1px solid #E6E6E6;
     transition: background-color 0.4s;
     padding: 0.4rem 1rem;
 }
 
 .side-box-item:hover {
-    background-color: rgba(230,230,230)
+    background-color: #E6E6E6;
 }
 
 .side-box-item:last-child {
