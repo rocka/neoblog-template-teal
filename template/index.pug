@@ -3,4 +3,9 @@ extends layout
 block content
     each article in articles
         div(class="paper")
-            a(class="title" href=`/article/${article.file.base}`)  #{article.meta.title}
+            article
+                h1
+                    a(class="title" href=`/article/${article.file.base}`)  #{article.meta.title}
+                !=article.excerpt
+                p(class="more")
+                    a(href=`/article/${article.file.base}`) - MORE -
