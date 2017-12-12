@@ -135,6 +135,27 @@ nav > .nav-list > a:hover {
     color: darkorange;
 }
 
+.pagination {
+    height: 40px;
+}
+
+.pagination a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: #009688;
+    border-radius: 100%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pagination .next {
+    float: right;
+}
+
 /* side bar */
 
 aside {
@@ -242,6 +263,22 @@ article blockquote {
 
 article blockquote p {
     margin: 0;
+}
+
+article ul,
+article ol {
+    padding: 0;
+    margin-left: 1.2rem;
+}
+
+article ul li,
+article ol li {
+    padding: 0.2rem 0;
+}
+
+article ul li.task-item {
+    list-style-type: none;
+    margin-left: -1.2rem;
 }
 
 /* responsive */
