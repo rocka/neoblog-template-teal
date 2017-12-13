@@ -329,7 +329,8 @@ article ul li.task-item {
         margin: 0;
     }
     .paper,
-    .side-box {
+    .side-box,
+    .pagination {
         margin-left: 1rem;
         margin-right: 1rem;
         width: calc(100% - 2rem);
