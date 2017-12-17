@@ -1,0 +1,145 @@
+.isso-thread {
+    margin-bottom: 1.5rem;
+}
+
+.isso-thread h4,
+.isso-thread .isso-postbox,
+.isso-thread .isso-comment {
+    padding: 0.83rem;
+    border-radius: 2px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.isso-thread h4 {
+    background-color: #009688;
+    color: white;
+    margin: 1.5rem 0;
+}
+
+.isso-thread .isso-postbox {
+    background-color: white;
+}
+
+.isso-thread .textarea-wrapper div {
+    outline: none;
+    height: 4rem;
+    border-bottom: 2px solid lightgray;
+}
+
+.isso-thread .auth-section {
+    height: 3em;
+}
+
+.isso-thread .auth-section p {
+    margin-bottom: 0;
+}
+
+.isso-thread .auth-section .input-wrapper {
+    display: inline-block;
+    width: 28%;
+}
+
+.isso-thread .auth-section .input-wrapper:nth-child(2) {
+    margin: 1em 2%;
+}
+
+.isso-thread .auth-section .input-wrapper input {
+    border: none;
+    border-bottom: 2px solid lightgray;
+    outline: none;
+    width: 100%;
+}
+
+.isso-thread .textarea-wrapper div:focus,
+.isso-thread .auth-section .input-wrapper input:focus {
+    border-bottom: 2px solid #009688;
+}
+
+.isso-thread .post-action {
+    display: inline-block;
+    width: 12%;
+    text-align: right;
+}
+
+.isso-thread .post-action input {
+    cursor: pointer;
+    background-color: #009688;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    color: white;
+    padding: 0.3rem 1rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+.isso-thread .post-action input:hover {
+    background-color: #00aa99;
+    box-shadow: 0 2px 5px grey;
+}
+
+.isso-thread .post-action input:focus {
+    box-shadow: 0 1px 1px grey;
+    background-color: teal;
+}
+
+.isso-thread .isso-comment {
+    margin-top: 0.83rem;
+    background-color: white;
+}
+
+.isso-thread .isso-comment .avatar {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 0.83rem;
+}
+
+.isso-thread .isso-comment .isso-comment-header {
+    line-height: 40px;
+}
+
+.isso-thread  .isso-comment.isso-no-votes .votes {
+    display: none;
+}
+
+.isso-thread .isso-comment .isso-comment-footer svg {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.isso-thread .isso-comment .isso-comment-footer .spacer {
+    display: none;
+}
+
+.isso-thread .isso-comment .isso-comment-footer .spacer {
+    color: grey;
+}
+
+.isso-thread .isso-comment .isso-comment-footer .edit,
+.isso-thread .isso-comment .isso-comment-footer .cancel,
+.isso-thread .isso-comment .isso-comment-footer .delete,
+.isso-thread .isso-comment .isso-comment-footer .reply {
+    font-weight: bold;
+    margin-left: 0.83em;
+}
+
+@media screen and (max-width: 630px) {
+    .isso-thread {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: calc(100% - 2rem);
+    }
+    .isso-thread .isso-postbox .auth-section {
+        height: auto;
+    }
+    .isso-thread .isso-postbox .auth-section .input-wrapper {
+        display: block;
+        margin: 0.83rem 0 0 0;
+        width: 100%;
+    }
+    .isso-thread .isso-postbox .auth-section .post-action {
+        width: 100%;
+    }
+}
