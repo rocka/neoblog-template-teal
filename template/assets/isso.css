@@ -34,6 +34,10 @@
     margin-bottom: 0;
 }
 
+.isso-thread .auth-section p input {
+    font-size: 1rem;
+}
+
 .isso-thread .auth-section .input-wrapper {
     display: inline-block;
     width: 28%;
@@ -99,7 +103,8 @@
     line-height: 40px;
 }
 
-.isso-thread  .isso-comment.isso-no-votes .votes {
+.isso-thread  .isso-comment.isso-no-votes .votes,
+.isso-thread .isso-comment .isso-comment-footer .spacer {
     display: none;
 }
 
@@ -107,14 +112,6 @@
     vertical-align: middle;
     width: 20px;
     height: 20px;
-}
-
-.isso-thread .isso-comment .isso-comment-footer .spacer {
-    display: none;
-}
-
-.isso-thread .isso-comment .isso-comment-footer .spacer {
-    color: grey;
 }
 
 .isso-thread .isso-comment .isso-comment-footer .edit,
@@ -131,14 +128,17 @@
         margin-right: 1rem;
         width: calc(100% - 2rem);
     }
+
     .isso-thread .isso-postbox .auth-section {
         height: auto;
     }
+
     .isso-thread .isso-postbox .auth-section .input-wrapper {
         display: block;
         margin: 0.83rem 0 0 0;
         width: 100%;
     }
+
     .isso-thread .isso-postbox .auth-section .post-action {
         width: 100%;
     }
