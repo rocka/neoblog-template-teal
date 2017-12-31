@@ -186,7 +186,16 @@ aside {
     overflow: hidden;
     border-bottom: 1px solid #E6E6E6;
     transition: background-color 0.4s;
+}
+
+.side-box-item > a,
+.side-box-item > span {
     padding: 0.4rem 1rem;
+    color: inherit;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .side-box-item:hover {
@@ -195,16 +204,6 @@ aside {
 
 .side-box-item:last-child {
     border-bottom: none;
-}
-
-.side-box-item a {
-    font-weight: 300;
-    color: #444444;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    display: inherit;
-    overflow: hidden;
-    outline: none;
 }
 
 /* article elements */

@@ -12,10 +12,18 @@ module.exports = {
         ],
         side: [
             {
-                name: 'Info',
+                name: 'Thanks To',
                 items: [
-                    `OS: ${process.platform} ${process.arch}`,
-                    `Node: ${process.version}`
+                    { text: 'Node', link: 'https://nodejs.org', target: '_blank' },
+                    { text: 'Pug', link: 'https://pugjs.org', target: '_blank' },
+                    { text: 'Koa', link: 'http://koajs.com', target: '_blank' }
+                ]
+            },
+            {
+                name: 'Server Info',
+                items: [
+                    { text: `OS: ${process.platform} ${process.arch}` },
+                    { text: `Node: ${process.version}` }
                 ]
             }
         ],
