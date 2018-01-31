@@ -1,7 +1,8 @@
 /*   global adjustment   */
 
-html, body {
-    font-family: 'Noto Sans CJK SC', 'Noto Sans', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+html,
+body {
+    font-family: Noto Sans CJK SC, Noto Sans, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -61,7 +62,7 @@ nav > .nav-list > a {
 }
 
 nav > .nav-list > a:hover {
-    background-color: rgba(255, 255, 255, 0.2)
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* header */
@@ -176,7 +177,7 @@ aside {
 }
 
 .side-box .side-box-header {
-    background-color: #2CA499;
+    background-color: #2ca499;
     color: white;
     padding: 0.6rem 1rem;
     font-weight: 500;
@@ -185,7 +186,7 @@ aside {
 .side-box-item {
     color: #444444;
     overflow: hidden;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
     transition: background-color 0.4s;
 }
 
@@ -200,7 +201,7 @@ aside {
 }
 
 .side-box-item:hover {
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
 }
 
 .side-box-item:last-child {
@@ -239,7 +240,7 @@ article pre {
 article p code {
     font-size: 85%;
     padding: 0.15rem;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
 }
 
 article figure {
@@ -264,7 +265,7 @@ article figure figcaption {
 
 article blockquote {
     padding: 0.83rem 20px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     border-left: 4px solid lightgrey;
 }
 
@@ -294,9 +295,11 @@ article ul li.task-item {
     .content {
         width: 900px;
     }
+
     .main {
         width: 610px;
     }
+
     .header > .motto {
         margin: 9rem calc(50% - 450px);
     }
@@ -308,16 +311,20 @@ article ul li.task-item {
         width: 100%;
         max-width: 610px;
     }
+
     .header > .motto {
         margin: 9rem calc(50% - 305px);
     }
+
     .main {
         margin: auto;
     }
+
     aside {
         width: 610px;
         text-align-last: justify;
     }
+
     .side-box {
         width: 290px;
         margin-top: 0;
@@ -325,6 +332,7 @@ article ul li.task-item {
         vertical-align: top;
         text-align-last: initial;
     }
+
     .side-box:nth-of-type(odd) {
         margin-right: 30px;
     }
@@ -335,20 +343,24 @@ article ul li.task-item {
     aside {
         width: 100%;
     }
+
     .header > .motto {
         margin: 9rem 1rem;
         width: 100%;
     }
+
     .main {
         width: 100%;
         margin: 0;
     }
+
     .paper,
     .side-box,
     .pagination {
         margin: 1rem 1rem 0;
         width: calc(100% - 2rem);
     }
+
     .side-box:nth-of-type(odd) {
         margin-right: 1rem;
     }
