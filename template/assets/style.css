@@ -105,7 +105,7 @@ nav > .nav-list > a:hover {
 .content {
     position: relative;
     width: 1140px;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 /* main content, against `aside` */
@@ -118,7 +118,7 @@ nav > .nav-list > a:hover {
 /* something looks like `material paper` */
 
 .paper {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
     background-color: white;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     padding: 0.83rem;
@@ -137,6 +137,7 @@ nav > .nav-list > a:hover {
 
 .pagination {
     height: 40px;
+    margin: 1.5rem 0;
 }
 
 .pagination a {
@@ -171,7 +172,7 @@ aside {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .side-box .side-box-header {
@@ -310,14 +311,22 @@ article ul li.task-item {
     .header > .motto {
         margin: 9rem calc(50% - 305px);
     }
+    .main {
+        margin: auto;
+    }
     aside {
         width: 610px;
         text-align-last: justify;
     }
     .side-box {
         width: 290px;
+        margin-top: 0;
         display: inline-block;
+        vertical-align: top;
         text-align-last: initial;
+    }
+    .side-box:nth-of-type(odd) {
+        margin-right: 30px;
     }
 }
 
@@ -337,8 +346,10 @@ article ul li.task-item {
     .paper,
     .side-box,
     .pagination {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 1rem 1rem 0;
         width: calc(100% - 2rem);
+    }
+    .side-box:nth-of-type(odd) {
+        margin-right: 1rem;
     }
 }
