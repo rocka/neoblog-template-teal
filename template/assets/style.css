@@ -137,7 +137,6 @@ nav > .nav-list > a:hover {
 }
 
 .pagination {
-    height: 40px;
     margin: 1.5rem 0;
 }
 
@@ -156,6 +155,7 @@ nav > .nav-list > a:hover {
 
 .pagination .next {
     float: right;
+    margin-bottom: 1.5rem;
 }
 
 /* side bar */
@@ -322,7 +322,6 @@ article ul li.task-item {
 
     aside {
         width: 610px;
-        text-align-last: justify;
     }
 
     .side-box {
@@ -330,7 +329,6 @@ article ul li.task-item {
         margin-top: 0;
         display: inline-block;
         vertical-align: top;
-        text-align-last: initial;
     }
 
     .side-box:nth-of-type(odd) {
@@ -340,25 +338,33 @@ article ul li.task-item {
 
 @media screen and (max-width: 630px) {
     .main,
-    aside {
+    aside,
+    .header > .motto {
         width: 100%;
     }
 
     .header > .motto {
         margin: 9rem 1rem;
-        width: 100%;
     }
 
     .main {
-        width: 100%;
         margin: 0;
     }
 
     .paper,
     .side-box,
     .pagination {
-        margin: 1rem 1rem 0;
+        margin: 1rem;
         width: calc(100% - 2rem);
+    }
+
+    .side-box,
+    .pagination {
+        margin-top: 0;
+    }
+
+    .pagination .next {
+        margin-bottom: 1rem;
     }
 
     .side-box:nth-of-type(odd) {
