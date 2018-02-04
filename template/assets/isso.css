@@ -20,9 +20,9 @@
     background-color: white;
 }
 
-.isso-thread .textarea-wrapper div {
+.isso-thread .textarea-wrapper > div {
     outline: none;
-    height: 4rem;
+    min-height: 4rem;
     border-bottom: 2px solid lightgray;
 }
 
