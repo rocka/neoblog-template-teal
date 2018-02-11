@@ -2,7 +2,7 @@ extends layout
 
 block append head
     if isso
-        script(src=isso.embed data-isso-css=isso.css data-isso-lang=isso.lang)
+        script(src=isso.embed data-isso-css="false" data-isso-lang=isso.lang)
         link(rel="stylesheet", href=assets("isso.css"))
 
 block content
