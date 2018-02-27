@@ -103,7 +103,40 @@
     line-height: 40px;
 }
 
-.isso-thread  .isso-comment.isso-no-votes .votes,
+.isso-thread .isso-comment .isso-comment-header .spacer {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
+
+.isso-thread .isso-comment p code {
+    font-size: 85%;
+    padding: 0.15rem;
+    background-color: #eeeeee;
+}
+
+.isso-thread .isso-comment pre,
+.isso-thread .isso-comment blockquote {
+    margin: 1rem -0.83rem;
+    padding: 0.83rem 20px;
+}
+
+.isso-thread .isso-comment pre {
+    overflow-x: auto;
+    color: #abb2bf;
+    background-color: #282c34;
+}
+
+.isso-thread .isso-comment blockquote {
+    background-color: #eeeeee;
+    border-left: 4px solid lightgrey;
+}
+
+.isso-thread .isso-comment blockquote p {
+    margin: 0;
+}
+
+.isso-thread .isso-comment.isso-no-votes .votes,
 .isso-thread .isso-comment .isso-comment-footer .spacer {
     display: none;
 }
