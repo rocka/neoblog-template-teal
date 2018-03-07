@@ -2,7 +2,7 @@ module.exports = {
     lang: 'en',
     title: 'Template Teal',
     port: 2233,
-    articleDir: './node_modules/neoblog/example/article',
+    articleDir: './node_modules/@neoblog/neoblog/example/article',
     templateDir: './template',
     templateArgs: {
         nav: [
