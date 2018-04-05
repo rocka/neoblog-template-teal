@@ -2,8 +2,7 @@ extends layout
 
 block append head
     if isso
-        script(src=isso.embed data-isso-css="false" data-isso-lang=isso.lang)
-        link(rel="stylesheet", href=assets("isso.css"))
+        include isso
 
 block content
     div(class="paper")
