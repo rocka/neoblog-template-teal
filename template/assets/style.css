@@ -1,18 +1,10 @@
 /*   global adjustment   */
 
-html,
 body {
-    font-family: Noto Sans CJK SC, Noto Sans, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    font-family: Roboto, Noto Sans, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
     font-size: 16px;
-    padding: 0;
     margin: 0;
-}
-
-html {
     overflow-y: scroll;
-}
-
-body {
     background-color: #dddddd;
 }
 
@@ -55,6 +47,7 @@ nav > .nav-list {
 
 nav > .nav-list > a {
     display: inline-block;
+    box-sizing: border-box;
     line-height: 3rem;
     color: white;
     height: 100%;
@@ -242,6 +235,11 @@ article p code {
     font-size: 85%;
     padding: 0.15rem;
     background-color: #eeeeee;
+}
+
+article pre code,
+article p code {
+    font-family: Roboto Mono, Fira Code, Monaco, Consolas, Noto Sans Mono, Noto Mono, Droid Sans Mono, monospace;
 }
 
 article figure {
