@@ -107,7 +107,8 @@ nav > .nav-list > a:hover {
 }
 
 /* main content, against `aside` */
-.main {
+main {
+    /* TODO: refactor inline-block */
     width: 850px;
     display: inline-block;
     margin-right: 30px;
@@ -331,7 +332,7 @@ article hr {
         width: 900px;
     }
 
-    .main {
+    main {
         width: 610px;
     }
 
@@ -352,10 +353,6 @@ article hr {
         margin: 9rem calc(50% - 305px);
     }
 
-    .main {
-        margin: auto;
-    }
-
     aside {
         width: 610px;
     }
@@ -374,7 +371,7 @@ article hr {
 
 @media screen and (max-width: 630px) {
     nav > .nav-list,
-    .main,
+    main,
     aside,
     .header > .motto {
         width: 100%;
@@ -384,7 +381,7 @@ article hr {
         margin: 9rem 1rem;
     }
 
-    .main {
+    main {
         margin: 0;
     }
 

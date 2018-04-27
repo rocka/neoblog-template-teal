@@ -1,14 +1,14 @@
 aside
     each group in side
-        div(class="side-box")
-            div(class="side-box-header")
+        .side-box
+            .side-box-header
                 span #{group.name}
             each item in group.items
-                div(class="side-box-item")
+                .side-box-item
                     if item.text
                         if item.link
                             a(href=item.link target=(item.target || false)) #{item.text}
                         else 
                             span #{item.text}
                     else
-                        div(class="side-box-item")!= item
+                        .side-box-item!= item
