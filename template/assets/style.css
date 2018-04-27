@@ -288,6 +288,38 @@ article ul li.task-item {
     margin-left: -1.2rem;
 }
 
+article table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+article table th,
+article table td {
+    padding: 0.2em 1em;
+}
+
+article table th {
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #6b6b6b;
+    line-height: 1.8em;
+}
+
+article table td {
+    border-top: 1px solid #cccccc;
+    line-height: 1.5em;
+}
+
+article hr {
+    background-color: #cccccc;
+    border: none;
+    height: 1.5px;
+    margin: 2rem auto;
+    min-width: 175px;
+    width: 25%;
+}
+
 /* responsive */
 
 @media screen and (max-width: 1140px) {
