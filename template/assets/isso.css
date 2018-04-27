@@ -28,6 +28,9 @@
 
 .isso-thread .auth-section {
     height: 3em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .isso-thread .auth-section p {
@@ -39,12 +42,7 @@
 }
 
 .isso-thread .auth-section .input-wrapper {
-    display: inline-block;
-    width: 28%;
-}
-
-.isso-thread .auth-section .input-wrapper:nth-child(2) {
-    margin: 1em 2%;
+    margin-right: 0.5rem;
 }
 
 .isso-thread .auth-section .input-wrapper input {
@@ -60,8 +58,6 @@
 }
 
 .isso-thread .post-action {
-    display: inline-block;
-    width: 12%;
     text-align: right;
 }
 
@@ -163,6 +159,7 @@
     }
 
     .isso-thread .isso-postbox .auth-section {
+        display: block;
         height: auto;
     }
 
