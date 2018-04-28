@@ -29,6 +29,17 @@ module.exports = {
                 ]
             }
         ],
+        footer: {
+            meta: {
+                // display `© ${config.title}` in footer
+                // put string to override the text
+                copy: true,
+                // display 'Powered by NeoBlog' in footer
+                platform: true,
+                // display 'Themed by Teal' in footer
+                theme: true
+            }
+        },
         isso: {
             // Override useragent’s preferred language. Isso has been translated in over 12 languages.
             // The language is configured by its ISO 639-1 (two letter) code.

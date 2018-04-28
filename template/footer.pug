@@ -1,0 +1,10 @@
+.footer
+    .ft-content
+        if footer.meta.copy
+            span.copy &copy; #{typeof footer.meta.copy === 'string' ? footer.meta.copy : config.title}
+        if footer.meta.platform
+            span.platform Powered by 
+                a(href="https://github.com/rocka/neoblog") NeoBlog
+        if footer.meta.theme
+            span.theme Themed by 
+                a(href="https://github.com/rocka/neoblog-template-teal") Teal
