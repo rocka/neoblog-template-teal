@@ -3,7 +3,7 @@ nav
         each item in nav
             a(href=item.link) #{item.name}
 
-div.header(style=`background-image: url(${assets('header.jpg')})`)
+div.header(style=`background-image:url(${firstTruely(oneOf(header.img), assets('header.jpg'))})`)
     .motto
-        p.upper Talk is cheap
-        p.lower Show me the code
+        p.upper #{oneOf(header.motto.upper)}
+        p.lower #{oneOf(header.motto.lower)}

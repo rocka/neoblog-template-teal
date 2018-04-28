@@ -9,11 +9,34 @@ module.exports = {
         nav: [
             { name: 'Index', link: '/' }
         ],
+        header: {
+            // can be Array<string>/string/null/undefined .
+            // string -> specify background image url
+            // Array<string> -> randomly pick one each time render
+            // null/undefined -> use default image '/assets/header.jpg'
+            img: [
+                '/assets/header.jpg'
+            ],
+            motto: {
+                // can be Array<string>/string/null/undefined too .
+                // even template string
+                upper: 'Welcome to NeoBlog',
+                // if you would like it to be dynamic, declare it as prop getter:
+                get lower() {
+                    return [
+                        `powered by node ${process.version}`,
+                        `running for ${Math.round(process.uptime())} seconds`,
+                        'light weight bloggin platform',
+                        `the neatest theme I've ever seen`
+                    ]
+                }    
+            }
+        },
         // right side bar item groups
         side: [
             {
                 // group title
-                name: 'Thanks To',
+                name: 'Powered By',
                 // group items
                 items: [
                     { text: 'Node', link: 'https://nodejs.org', target: '_blank' },
