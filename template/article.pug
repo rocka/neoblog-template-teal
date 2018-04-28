@@ -1,6 +1,9 @@
 extends layout
 
 block append head
+    meta(property="og:title" content=`${article.meta.title} | ${config.title}`)
+    meta(property="og:image" content=permalink(host, article.excerptImg))
+    meta(property="og:description" content=article.excerptText)
     if isso
         include isso
 

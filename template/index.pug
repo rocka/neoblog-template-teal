@@ -1,5 +1,10 @@
 extends layout
 
+block append head
+    meta(property="og:title" content=config.title)
+    meta(property="og:image" content=`${permalink(host, firstTruely(oneOf(header.img), assets('header.jpg')))}`)
+    meta(property="og:description" content=`${oneOf(header.motto.upper)}. ${oneOf(header.motto.lower)}.`)
+
 block content
     each article in articles
         .paper
@@ -19,4 +24,3 @@ block content
             if pagination.next
                 a.next(href=`/page/${pagination.next}`)
                     span >
-
