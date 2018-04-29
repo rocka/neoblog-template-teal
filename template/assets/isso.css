@@ -50,6 +50,7 @@
     border-bottom: 2px solid lightgray;
     outline: none;
     width: 100%;
+    background-color: transparent;
 }
 
 .isso-thread .textarea-wrapper div:focus,
@@ -71,6 +72,11 @@
     padding: 0.3rem 1rem;
     outline: none;
     transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.isso-thread .post-action input::-moz-focus-inner {
+    border: 0;
 }
 
 .isso-thread .post-action input:hover {
@@ -149,6 +155,49 @@
 .isso-thread .isso-comment .isso-comment-footer .reply {
     font-weight: bold;
     margin-left: 0.83em;
+}
+
+/* the postbox to replay a comment */
+
+.isso-thread .isso-comment .isso-postbox {
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* preview mode */
+
+.isso-thread .isso-postbox.preview-mode {
+    background: repeating-linear-gradient(-45deg, #f8f8f8, #f8f8f8 10px, #fff 10px, #fff 20px)
+}
+
+.isso-thread .isso-postbox .preview .isso-comment {
+    padding: 0;
+    margin: 0;
+    min-height: 4rem;
+    box-shadow: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+}
+
+.isso-thread .isso-postbox .preview .isso-comment p:first-child {
+    margin-top: 0;
+}
+
+.isso-thread .post-action input[name=edit],
+.isso-thread .post-action input[name=preview] {
+    margin-left: 0.5rem;
+}
+
+.isso-thread .textarea-wrapper .preview,
+.isso-thread .post-action input[name=edit],
+.isso-thread .preview-mode .textarea,
+.isso-thread .preview-mode .post-action input[name=preview] {
+    display: none;
+}
+
+.isso-thread .preview-mode .preview,
+.isso-thread .preview-mode input[name=edit] {
+    display: unset;
 }
 
 @media screen and (max-width: 630px) {
