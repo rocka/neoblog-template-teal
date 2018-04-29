@@ -16,6 +16,11 @@
     margin: 1.5rem 0;
 }
 
+.isso-thread h4:empty::after {
+    content: '...';
+    user-select: none;
+}
+
 .isso-thread .isso-postbox {
     background-color: white;
 }
