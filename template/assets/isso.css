@@ -194,14 +194,14 @@
 }
 
 .isso-thread .textarea-wrapper .preview,
-.isso-thread .post-action input[name=edit],
+.isso-thread .post-action:nth-child(6),
 .isso-thread .preview-mode .textarea,
-.isso-thread .preview-mode .post-action input[name=preview] {
+.isso-thread .preview-mode .post-action:nth-child(5){
     display: none;
 }
 
 .isso-thread .preview-mode .preview,
-.isso-thread .preview-mode input[name=edit] {
+.isso-thread .preview-mode .post-action:nth-child(6) {
     display: unset;
 }
 
