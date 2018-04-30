@@ -1,6 +1,6 @@
 {
   "name": "@neoblog/template-teal",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "template `teal` for neoblog",
   "scripts": {
     "start": "neoblog"
