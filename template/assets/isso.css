@@ -188,8 +188,8 @@
     margin-top: 0;
 }
 
-.isso-thread .post-action input[name=edit],
-.isso-thread .post-action input[name=preview] {
+.isso-thread .post-action:nth-child(4) {
+    order: 1;
     margin-left: 0.5rem;
 }
 
@@ -215,6 +215,7 @@
     .isso-thread .isso-postbox .auth-section {
         display: block;
         height: auto;
+        text-align: right;
     }
 
     .isso-thread .isso-postbox .auth-section .input-wrapper {
@@ -224,6 +225,10 @@
     }
 
     .isso-thread .isso-postbox .auth-section .post-action {
-        width: 100%;
+        display: inline-block;
+    }
+
+    .isso-thread .post-action:nth-child(4) {
+        float: right;
     }
 }
