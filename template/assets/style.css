@@ -73,19 +73,21 @@ nav > .nav-list > a:hover {
     position: relative;
     background-color: teal;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .header > .motto {
     position: relative;
     width: 1140px;
-    margin: 9rem calc(50% - 570px);
+    margin-top: 9rem;
+    margin-left: calc(50% - 570px);
     margin-bottom: 0;
 }
 
 .header > .motto > p {
     font-weight: bold;
-    margin: 8px 0;
+    margin: 0;
     color: white;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
@@ -96,23 +98,24 @@ nav > .nav-list > a:hover {
 
 .header > .motto > .lower {
     font-size: 1.4rem;
+    margin-top: 0.5rem;
 }
 
 /* elements under header */
 
-/* the wrapper */
+/* wrapper of <main> and <aside> */
 .content {
     position: relative;
     width: 1140px;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 /* main content, against `aside` */
 main {
-    /* TODO: refactor inline-block */
     width: 850px;
-    display: inline-block;
-    margin-right: 30px;
 }
 
 /* something looks like `material paper` */
@@ -128,12 +131,9 @@ main {
 
 .paper .title {
     font-size: 1.5rem;
-    color: #009688;
 }
 
-.paper a.title:hover {
-    color: darkorange;
-}
+/* bottom pagination, prev/next button */
 
 .pagination {
     margin: 1.5rem 0;
@@ -161,10 +161,6 @@ main {
 
 aside {
     width: 260px;
-    display: inline-block;
-    right: 0;
-    top: 0;
-    vertical-align: top;
 }
 
 .side-box {
@@ -346,6 +342,7 @@ article hr {
 
 /* responsive */
 
+/* limit "wrapper" width to 900px */
 @media screen and (max-width: 1140px) {
     nav > .nav-list,
     .content,
@@ -358,10 +355,11 @@ article hr {
     }
 
     .header > .motto {
-        margin: 9rem calc(50% - 450px);
+        margin-left: calc(50% - 450px);
     }
 }
 
+/* limit "wrapper" width to 610px, two-column <aside> under <main> */
 @media screen and (max-width: 940px) {
     nav > .nav-list,
     .content,
@@ -372,22 +370,24 @@ article hr {
     }
 
     .header > .motto {
-        margin: 9rem calc(50% - 305px);
+        margin-left: calc(50% - 305px);
+    }
+
+    .content {
+        flex-direction: column;
     }
 
     aside {
         width: 610px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     .side-box {
         width: 290px;
         margin-top: 0;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .side-box:nth-of-type(odd) {
-        margin-right: 30px;
     }
 
     .footer {
@@ -395,6 +395,7 @@ article hr {
     }
 }
 
+/* "wrapper" width 100%, one-column <aside> under <main> */
 @media screen and (max-width: 630px) {
     nav > .nav-list,
     main,
@@ -405,7 +406,7 @@ article hr {
     }
 
     .header > .motto {
-        margin: 9rem 1rem;
+        margin-left: 1rem;
     }
 
     main {
@@ -426,10 +427,6 @@ article hr {
 
     .pagination .next {
         margin-bottom: 1rem;
-    }
-
-    .side-box:nth-of-type(odd) {
-        margin-right: 1rem;
     }
 
     .footer .ft-content span::after {
