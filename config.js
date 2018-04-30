@@ -72,11 +72,16 @@ module.exports = {
             embed: 'https://isso.rocka.me/js/embed.min.js',
             // Isso usually detects the REST API automatically, but when you serve the JS script on a different location,
             // this may fail. Use data-isso to override the API location.
-            prefix: '',
+            prefix: 'https://isso.rocka.me',
             // Enable or disable voting feature on the client side.
             vote: true,
             // Enable or disable avatar generation.
             avatar: true,
+            // Uses gravatar images instead of generating svg images.
+            // You have to set `isso.avatar` to false when you want to use this,
+            // otherwise both the gravatar and avatar svg image will show up.
+            // Please also set option "gravatar" to true in the server configuration.
+            gravatar: false,
             // Number of comments to reveal on clicking the “X Hidden” link.
             reveal: 5,
             // Set to true when spam guard is configured with require-author = true.
@@ -87,7 +92,7 @@ module.exports = {
             replySelf: false,
             // Number of top level (or nested) comments to show by default.
             // If some comments are not shown, an “X Hidden” link is shown.
-            maxCommentsTop: 10,
+            maxCommentsTop: 1,
             maxCommentsNested: 5
         }
     }

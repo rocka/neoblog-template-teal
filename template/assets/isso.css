@@ -100,10 +100,14 @@
 }
 
 .isso-thread .isso-comment .avatar {
-    width: 40px;
-    height: 40px;
     float: left;
     margin-right: 0.83rem;
+}
+
+.isso-thread .isso-comment .avatar,
+.isso-thread .isso-comment .avatar img {
+    width: 40px;
+    height: 40px;
 }
 
 .isso-thread .isso-comment .isso-comment-header {
