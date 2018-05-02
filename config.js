@@ -5,10 +5,30 @@ module.exports = {
     articleDir: './node_modules/@neoblog/neoblog/example/article',
     templateDir: './template',
     templateArgs: {
-        // top nav bar items
+        // <html lang="">
+        lang: 'en',
+        // <html> <head>
+        head: {
+            meta: [
+                // charset, name, content, httpEquiv
+                { charset: 'UTF-8' },
+                { name: 'theme-color', content: '#009688' },
+                { httpEquiv: 'content-security-policy', content: 'script-src \'self\';' }
+            ],
+            link: [
+                // as, rel, href, crossorigin, media, sizes, type, title
+                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono' }
+            ],
+            script: [
+                // async, defer, charset, src, type
+                { src: '/assets/script.js', defer: true }
+            ]
+        },
+        // <html> <body> <nav>
         nav: [
             { name: 'Index', link: '/' }
         ],
+        // <html> <body> <div class="header">
         header: {
             // can be Array<string>/string/null/undefined .
             // string -> specify background image url
@@ -29,7 +49,7 @@ module.exports = {
                         'light weight bloggin platform',
                         `the neatest theme I've ever seen`
                     ]
-                }    
+                }
             }
         },
         // right side bar item groups
