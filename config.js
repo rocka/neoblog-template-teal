@@ -13,7 +13,8 @@ module.exports = {
                 // charset, name, content, httpEquiv
                 { charset: 'UTF-8' },
                 { name: 'theme-color', content: '#009688' },
-                { httpEquiv: 'content-security-policy', content: 'script-src \'self\';' }
+                // when setup CSP, do not forget to include isso script url.
+                { httpEquiv: 'content-security-policy', content: `script-src 'self' https://*;` }
             ],
             link: [
                 // as, rel, href, crossorigin, media, sizes, type, title
