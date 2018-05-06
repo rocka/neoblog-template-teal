@@ -192,21 +192,33 @@
     margin-top: 0;
 }
 
+/* place the 'Submit' button at very right */
+
 .isso-thread .post-action:nth-child(4) {
     order: 1;
     margin-left: 0.5rem;
 }
 
+/* .preview-mode textarea visibility toggle */
+
 .isso-thread .textarea-wrapper .preview,
-.isso-thread .post-action:nth-child(6),
-.isso-thread .preview-mode .textarea,
-.isso-thread .preview-mode .post-action:nth-child(5) {
+.isso-thread .preview-mode .textarea {
     display: none;
 }
 
-.isso-thread .preview-mode .preview,
-.isso-thread .preview-mode .post-action:nth-child(6) {
+.isso-thread .preview-mode .preview {
     display: unset;
+}
+
+/* .preview-mode button visibility toggle, MUST NOT be overriden */
+
+.isso-thread .post-action:nth-child(6),
+.isso-thread .preview-mode .post-action:nth-child(5) {
+    display: none !important;
+}
+
+.isso-thread .preview-mode .post-action:nth-child(6) {
+    display: inline-block !important;
 }
 
 /* comment loader (* Hidden) */
