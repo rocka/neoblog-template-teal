@@ -47,5 +47,6 @@ html(lang= lang || 'en')
                 block content
             block side
                 include side
-        block footer
-            include footer
+        if footer
+            block footer
+                include footer
