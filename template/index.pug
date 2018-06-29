@@ -19,8 +19,8 @@ block content
     if pagination
         p.pagination
             if pagination.prev
-                a.prev(href=`/page/${pagination.prev}`)
+                a.prev(href=`${pagination.prefix}/page/${pagination.prev}`)
                     span <
             if pagination.next
-                a.next(href=`/page/${pagination.next}`)
+                a.next(href=`${pagination.prefix}/page/${pagination.next}`)
                     span >
