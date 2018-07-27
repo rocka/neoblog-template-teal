@@ -14,4 +14,4 @@ block content
             p.meta #{formatDate(article.meta.date)}
             != article.html
     if isso
-        #isso-thread.isso-thread
+        #isso-thread.isso-thread(data-title=article.meta.title || config.title || 'Isso Comments')
