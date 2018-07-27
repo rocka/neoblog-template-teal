@@ -114,6 +114,8 @@ module.exports = {
             // Number of top level (or nested) comments to show by default.
             // If some comments are not shown, an “X Hidden” link is shown.
             maxCommentsTop: 1,
+            // Set to true when reply notifications on server is configured with reply-notifications = true.
+            replyNotifications: true,
             maxCommentsNested: 5
         }
     }
