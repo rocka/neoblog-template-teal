@@ -63,6 +63,16 @@
     border-bottom: 2px solid #009688;
 }
 
+.isso-thread .notification-section {
+    margin-top: 0.83rem;
+    user-select: none;
+}
+
+.isso-thread .notification-section input[type=checkbox] {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
 .isso-thread .post-action {
     text-align: right;
 }
