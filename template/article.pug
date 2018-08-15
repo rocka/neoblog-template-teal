@@ -2,16 +2,20 @@ extends layout
 
 block append head
     meta(property="og:title" content=`${article.meta.title} | ${config.title}`)
-    meta(property="og:image" content=permalink(host, article.excerptImg))
+    if article.excerptImg
+        meta(property="og:image" content=permalink(host, article.excerptImg))
     meta(property="og:description" content=article.excerptText)
     if isso
         include isso
 
 block content
     .paper
-        article
-            h1 #{article.meta.title}
-            p.meta #{formatDate(article.meta.date)}
-            != article.html
+        article(itemscope itemtype="http://schema.org/BlogPosting")
+            header
+                h1.title(itemprop="name headline") #{article.meta.title}
+                p.meta
+                    time(itemprop="datePublished" datetime=article.meta.date) #{formatDate(article.meta.date)}
+            section(itemprop="articleBody")
+                != article.html
     if isso
         #isso-thread.isso-thread(data-title=article.meta.title || config.title || 'Isso Comments')

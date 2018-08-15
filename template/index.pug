@@ -2,17 +2,19 @@ extends layout
 
 block append head
     meta(property="og:title" content=config.title)
-    meta(property="og:image" content=`${permalink(host, firstTruely(oneOf(header.img), assets('header.jpg')))}`)
     meta(property="og:description" content=`${oneOf(header.motto.upper)}. ${oneOf(header.motto.lower)}.`)
 
 block content
     each article in articles
         .paper
-            article
-                h1
-                    a(class="title" href=`/article/${article.file.base}`)  #{article.meta.title}
-                p.meta #{formatDate(article.meta.date)}
-                !=article.excerpt
+            article(itemscope itemtype="http://schema.org/BlogPosting")
+                header
+                    h1.title
+                        a(itemprop="name headline" href=`/article/${article.file.base}`)  #{article.meta.title}
+                    p.meta
+                        time(itemprop="datePublished" datetime=article.meta.date) #{formatDate(article.meta.date)}
+                section(itemprop="description")
+                    !=article.excerpt
                 if article.more
                     p.more
                         a(href=`/article/${article.file.base}`) - MORE -
