@@ -1,9 +1,9 @@
 nav
     .nav-list
         each item in nav
-            a(href=item.link) #{item.name}
+            a.nav-link( href=item.link) #{item.name}
 
 div.header(style=`background-image:url(${firstTruely(oneOf(header.img), assets('header.jpg'))})`)
     .motto
-        p.upper #{oneOf(header.motto.upper)}
-        p.lower #{oneOf(header.motto.lower)}
+        p.motto-text.upper #{oneOf(header.motto.upper)}
+        p.motto-text.lower #{oneOf(header.motto.lower)}

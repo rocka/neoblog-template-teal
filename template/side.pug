@@ -7,8 +7,8 @@ aside
                 .side-box-item
                     if item.text
                         if item.link
-                            a(href=item.link target=(item.target || false)) #{item.text}
+                            a.side-box-item__inner(href=item.link target=(item.target || false)) #{item.text}
                         else 
-                            span #{item.text}
+                            span.side-box-item__inner #{item.text}
                     else
                         .side-box-item!= item

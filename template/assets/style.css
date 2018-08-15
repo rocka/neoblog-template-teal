@@ -41,7 +41,7 @@ nav {
     z-index: 1000;
 }
 
-nav > .nav-list,
+nav .nav-list,
 .ft-content {
     display: block;
     height: 100%;
@@ -52,7 +52,7 @@ nav > .nav-list,
     white-space: nowrap;
 }
 
-nav > .nav-list > a {
+nav .nav-list .nav-link {
     display: inline-block;
     box-sizing: border-box;
     line-height: 3rem;
@@ -62,7 +62,7 @@ nav > .nav-list > a {
     transition: background-color 0.4s;
 }
 
-nav > .nav-list > a:hover {
+nav .nav-list .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -80,7 +80,7 @@ nav > .nav-list > a:hover {
     background-attachment: fixed;
 }
 
-.header > .motto {
+.header .motto {
     position: relative;
     width: 1140px;
     margin-top: 9rem;
@@ -88,18 +88,18 @@ nav > .nav-list > a:hover {
     margin-bottom: 0;
 }
 
-.header > .motto > p {
+.header .motto .motto-text {
     font-weight: bold;
     margin: 0;
     color: white;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
-.header > .motto > .upper {
+.header .motto .upper {
     font-size: 2.2rem;
 }
 
-.header > .motto > .lower {
+.header .motto .lower {
     font-size: 1.4rem;
     margin-top: 0.5rem;
 }
@@ -189,8 +189,7 @@ aside {
     transition: background-color 0.4s;
 }
 
-.side-box-item > a,
-.side-box-item > span {
+.side-box-item .side-box-item__inner {
     padding: 0.4rem 1rem;
     color: inherit;
     white-space: nowrap;
@@ -226,7 +225,7 @@ aside {
     content: unset;
 }
 
-/* article elements */
+/* article elements */ 
 
 article p.more {
     text-align: right;
@@ -234,15 +233,19 @@ article p.more {
     margin-bottom: 0;
 }
 
-article h1 {
+article header .title {
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
-article p.meta {
+article header .meta {
     color: grey;
     font-size: 0.9em;
     margin: 0;
+}
+
+article p {
+    line-height: 1.7em;
 }
 
 article pre,
@@ -304,12 +307,7 @@ article ol {
 
 article ul li,
 article ol li {
-    padding: 0.2rem 0;
-}
-
-article ul li.task-item {
-    list-style-type: none;
-    margin-left: -1.2rem;
+    margin: 0.2rem 0;
 }
 
 article table {
@@ -348,7 +346,7 @@ article hr {
 
 /* limit "wrapper" width to 900px */
 @media screen and (max-width: 1140px) {
-    nav > .nav-list,
+    nav .nav-list,
     .content,
     .ft-content {
         width: 900px;
@@ -358,14 +356,14 @@ article hr {
         width: 610px;
     }
 
-    .header > .motto {
+    .header .motto {
         margin-left: calc(50% - 450px);
     }
 }
 
 /* limit "wrapper" width to 610px, two-column <aside> under <main> */
 @media screen and (max-width: 940px) {
-    nav > .nav-list,
+    nav .nav-list,
     .content,
     aside,
     .ft-content {
@@ -373,7 +371,7 @@ article hr {
         max-width: 610px;
     }
 
-    .header > .motto {
+    .header .motto {
         margin-left: calc(50% - 305px);
     }
 
@@ -401,15 +399,15 @@ article hr {
 
 /* "wrapper" width 100%, one-column <aside> under <main> */
 @media screen and (max-width: 630px) {
-    nav > .nav-list,
+    nav .nav-list,
     main,
     aside,
-    .header > .motto,
+    .header .motto,
     .ft-content {
         width: 100%;
     }
 
-    .header > .motto {
+    .header .motto {
         margin-left: 1rem;
     }
 
