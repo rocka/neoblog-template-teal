@@ -15,8 +15,7 @@ block content
                         a(itemprop="name headline" href=`/article/${article.file.base}`)  #{article.meta.title}
                     p.meta
                         time(itemprop="datePublished" datetime=article.meta.date) #{formatDate(article.meta.date)}
-                section(itemprop="description")
-                    !=article.excerpt
+                section(itemprop="description") !{article.excerpt}
                 if article.more
                     p.more
                         a(href=`/article/${article.file.base}`) - MORE -
@@ -24,7 +23,7 @@ block content
         p.pagination
             if pagination.prev
                 a.prev(href=`${pagination.prefix}/page/${pagination.prev}`)
-                    span <
+                    span #{'<'}
             if pagination.next
                 a.next(href=`${pagination.prefix}/page/${pagination.next}`)
-                    span >
+                    span #{'>'}

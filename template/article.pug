@@ -15,7 +15,6 @@ block content
                 h1.title(itemprop="name headline") #{article.meta.title}
                 p.meta
                     time(itemprop="datePublished" datetime=article.meta.date) #{formatDate(article.meta.date)}
-            section(itemprop="articleBody")
-                != article.html
+            section(itemprop="articleBody") !{article.html}
     if isso
         #isso-thread.isso-thread(data-title=article.meta.title || config.title || 'Isso Comments')
