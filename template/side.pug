@@ -1,14 +1,22 @@
 aside
     each group in side
         .side-box
-            .side-box-header
-                span #{group.name}
-            each item in group.items
-                .side-box-item
-                    if item.text
-                        if item.link
-                            a.side-box-item__inner(href=item.link target=(item.target || false)) #{item.text}
-                        else 
-                            span.side-box-item__inner #{item.text}
-                    else
-                        .side-box-item!= item
+            if group.preset == 'tags'
+                .side-box-header
+                    span #{group.name || 'Tags'}
+                each articles, tag in state.tags
+                    if articles.length > 0
+                        .side-box-item
+                            a.side-box-item__inner(href=`/tag/${tag}`) #{tag} (#{articles.length})
+            else
+                .side-box-header
+                    span #{group.name}
+                each item in group.items
+                    .side-box-item
+                        if item.text
+                            if item.link
+                                a.side-box-item__inner(href=item.link target=(item.target || false)) #{item.text}
+                            else 
+                                span.side-box-item__inner #{item.text}
+                        else
+                            .side-box-item!= item

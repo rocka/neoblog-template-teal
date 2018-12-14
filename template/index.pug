@@ -5,6 +5,8 @@ block append head
     meta(property="og:description" content=`${oneOf(header.motto.upper)}. ${oneOf(header.motto.lower)}.`)
 
 block content
+    if tag
+        .tag-tip View articles under tag: #{tag}
     each article in articles
         .paper
             article(itemscope itemtype="http://schema.org/BlogPosting")

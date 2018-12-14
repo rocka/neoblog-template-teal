@@ -12,6 +12,6 @@
   "author": "rocka <i@rocka.me>",
   "license": "MIT",
   "peerDependencies": {
-    "@neoblog/neoblog": "^0.2.2"
+    "@neoblog/neoblog": "^0.3.0"
   }
 }

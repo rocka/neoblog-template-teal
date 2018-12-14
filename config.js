@@ -56,6 +56,10 @@ module.exports = {
         // right side bar item groups
         side: [
             {
+                // use sidebar preset 'tag'
+                preset: 'tags'
+            },
+            {
                 // group title
                 name: 'Powered By',
                 // group items

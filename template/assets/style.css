@@ -1,7 +1,8 @@
 /*   global adjustment   */
 
 body {
-    font-family: Roboto, Noto Sans, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    font-family: Roboto, 'Noto Sans', 'Noto Sans CJK SC', 'Source Han Sans CN', 
+        'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
     font-size: 16px;
     margin: 0;
     overflow-y: scroll;
@@ -122,6 +123,15 @@ main {
     width: 850px;
 }
 
+.tag-tip {
+    padding: 0.83rem;
+    border-radius: 2px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    background-color: #009688;
+    color: white;
+    margin: 1.5rem 0;
+}
+
 /* something looks like `material paper` */
 
 .paper {
@@ -179,7 +189,7 @@ aside {
     background-color: #2ca499;
     color: white;
     padding: 0.6rem 1rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .side-box-item {
@@ -225,7 +235,7 @@ aside {
     content: unset;
 }
 
-/* article elements */ 
+/* article elements */
 
 article p.more {
     text-align: right;
