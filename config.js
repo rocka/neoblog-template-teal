@@ -27,7 +27,7 @@ module.exports = {
         },
         // <html> <body> <nav>
         nav: [
-            { name: 'Index', link: '/' }
+            { text: 'Index', attr: { href: '/' } }
         ],
         // <html> <body> <div class="header">
         header: {
@@ -64,16 +64,19 @@ module.exports = {
                 name: 'Powered By',
                 // group items
                 items: [
-                    { text: 'Node', link: 'https://nodejs.org', target: '_blank' },
-                    { text: 'Pug', link: 'https://pugjs.org', target: '_blank' },
-                    { text: 'Koa', link: 'http://koajs.com', target: '_blank' }
+                    // when `href` exists in `attr`, it would be rendered to `<a>`
+                    { text: 'Node', attr: { href: 'https://nodejs.org', target: '_blank' } },
+                    { text: 'Pug', attr: { href: 'https://pugjs.org', target: '_blank' } },
+                    { text: 'Koa', attr: { href: 'http://koajs.com', target: '_blank' } }
                 ]
             },
             {
                 name: 'Server Info',
                 items: [
                     { text: `OS: ${process.platform} ${process.arch}` },
-                    { text: `Node: ${process.version}` }
+                    // specify `tag` would enforce it render as the tag specified
+                    // it's optional, default value is 'span'
+                    { tag: 'span', text: `Node: ${process.version}` }
                 ]
             }
         ],

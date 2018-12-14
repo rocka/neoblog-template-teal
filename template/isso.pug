@@ -1,17 +1,18 @@
 link(rel="stylesheet", href=assets("isso.css"))
 script(
     src=isso.embed
-    data-isso=(isso.prefix || false)
     data-isso-css="false"
-    data-isso-lang=isso.lang || false
-    data-isso-reply-to-self=(isso.replySelf === true ? "true" : false)
-    data-isso-reply-notifications=(isso.replyNotifications === true ? "true" : false)
-    data-isso-require-author=(isso.author === true ? "true" : false)
-    data-isso-require-email=(isso.email === true ? "true" : false)
-    data-isso-max-comments-top=(isso.maxCommentsTop == 10 ? false : isso.maxCommentsTop)
-    data-isso-max-comments-nested=(isso.maxCommentsNested == 5 ? false : isso.maxCommentsNested)
-    data-isso-reveal-on-click=(isso.reveal == 5 ? false : isso.reveal)
-    data-isso-avatar=(isso.avatar === false ? "false" : false)
-    data-isso-gravatar=(isso.gravatar === true ? "true" : false)
-    data-isso-vote=(isso.vote === false ? "false" : false)
-)
+)&attributes({
+    'data-isso': isso.prefix || false,
+    'data-isso-lang':  isso.lang || false,
+    'data-isso-reply-to-self': isso.replySelf === true ? "true" : false,
+    'data-isso-reply-notifications': isso.replyNotifications === true ? "true" : false,
+    'data-isso-require-author': isso.author === true ? "true" : false,
+    'data-isso-require-email': isso.email === true ? "true" : false,
+    'data-isso-max-comments-top': isso.maxCommentsTop == 10 ? false : isso.maxCommentsTop,
+    'data-isso-max-comments-nested': isso.maxCommentsNested == 5 ? false : isso.maxCommentsNested,
+    'data-isso-reveal-on-click': isso.reveal == 5 ? false : isso.reveal,
+    'data-isso-avatar': isso.avatar === false ? "false" : false,
+    'data-isso-gravatar': isso.gravatar === true ? "true" : false,
+    'data-isso-vote': isso.vote === false ? "false" : false,
+})

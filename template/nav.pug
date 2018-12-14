@@ -1,7 +1,7 @@
 nav
     .nav-list
         each item in nav
-            a.nav-link( href=item.link) #{item.name}
+            a.nav-link&attributes(item.attr) #{item.text}
 
 div.header(style=`background-image:url(${firstTruely(oneOf(header.img), assets('header.jpg'))})`)
     .motto

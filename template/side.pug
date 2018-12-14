@@ -14,9 +14,9 @@ aside
                 each item in group.items
                     .side-box-item
                         if item.text
-                            if item.link
-                                a.side-box-item__inner(href=item.link target=(item.target || false)) #{item.text}
-                            else 
-                                span.side-box-item__inner #{item.text}
+                            - var tag = item.tag || 'span'
+                            if item.attr && item.attr.href
+                                - tag = 'a'
+                            #{tag}.side-box-item__inner&attributes(item.attr) #{item.text}
                         else
-                            .side-box-item!= item
+                            !={item}
