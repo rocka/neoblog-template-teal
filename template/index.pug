@@ -6,7 +6,11 @@ block append head
 
 block content
     if tag
-        .tag-tip View articles under tag: #{tag}
+        .tag-tip
+            if lang == 'zh'
+                span 正在查看标签 “ #{tag} ” 下的文章：
+            else
+                span Viewing articles under tag: #{tag}
     each article in articles
         .paper
             article(itemscope itemtype="http://schema.org/BlogPosting")
