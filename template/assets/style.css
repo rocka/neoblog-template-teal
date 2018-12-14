@@ -130,6 +130,7 @@ main {
     background-color: #009688;
     color: white;
     margin: 1.5rem 0;
+    font-weight: bold;
 }
 
 /* something looks like `material paper` */
