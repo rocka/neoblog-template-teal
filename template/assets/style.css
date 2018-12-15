@@ -324,6 +324,10 @@ article ol li {
     margin: 0.2rem 0;
 }
 
+article .table-wrapper {
+    overflow-x: auto;
+}
+
 article table {
     margin: auto;
     border-collapse: collapse;
