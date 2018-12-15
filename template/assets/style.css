@@ -14,6 +14,7 @@ body {
 
 a {
     color: #009688;
+    word-break: break-word;
 }
 
 a,
@@ -129,7 +130,7 @@ main {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     background-color: #009688;
     color: white;
-    margin: 1.5rem 0;
+    margin: 1rem;
     font-weight: bold;
 }
 
@@ -261,7 +262,8 @@ article p {
 
 article pre,
 article figure,
-article blockquote {
+article blockquote,
+article .table-wrapper {
     margin: 1rem -0.83rem;
 }
 
@@ -277,7 +279,8 @@ article p code {
 
 article pre code,
 article p code {
-    font-family: Roboto Mono, Fira Code, Monaco, Consolas, Noto Sans Mono, Noto Mono, Droid Sans Mono, monospace;
+    font-family: 'Roboto Mono', 'Fira Code', 'Monaco', 'Consolas', 
+        'Noto Sans Mono', 'Noto Mono', 'Droid Sans Mono', monospace;
 }
 
 article figure {
@@ -334,14 +337,11 @@ article table td {
 article table th {
     text-align: left;
     font-weight: normal;
-    font-size: 1.1em;
     color: #6b6b6b;
-    line-height: 1.8em;
 }
 
 article table td {
     border-top: 1px solid #cccccc;
-    line-height: 1.5em;
 }
 
 article hr {
