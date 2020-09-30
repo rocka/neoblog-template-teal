@@ -1,9 +1,12 @@
 /*   global adjustment   */
 
-body {
+html {
     font-family: Roboto, 'Noto Sans', 'Noto Sans CJK SC', 'Source Han Sans CN', 
         'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
     font-size: 16px;
+}
+
+body {
     margin: 0;
     overflow-y: scroll;
     background-color: #dddddd;
@@ -25,6 +28,11 @@ a:visited {
 
 a:hover {
     color: darkorange;
+}
+
+code {
+    font-family: 'Roboto Mono', 'Fira Code', 'Monaco', 'Consolas', 
+        'Noto Sans Mono', 'Noto Mono', 'Droid Sans Mono', monospace;
 }
 
 /* nav bar */
@@ -271,16 +279,16 @@ article pre {
     padding: 0.83rem 20px;
 }
 
-article p code {
+article code {
     font-size: 85%;
     padding: 0.15rem;
     background-color: #eeeeee;
 }
 
-article pre code,
-article p code {
-    font-family: 'Roboto Mono', 'Fira Code', 'Monaco', 'Consolas', 
-        'Noto Sans Mono', 'Noto Mono', 'Droid Sans Mono', monospace;
+article pre code {
+    padding: unset;
+    font-size: unset;
+    background-color: unset;
 }
 
 article figure {
