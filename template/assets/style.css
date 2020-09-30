@@ -14,7 +14,6 @@ body {
 
 a {
     color: #009688;
-    word-break: break-word;
 }
 
 a,
@@ -258,6 +257,7 @@ article header .meta {
 
 article p {
     line-height: 1.7em;
+    word-break: break-all;
 }
 
 article pre,
