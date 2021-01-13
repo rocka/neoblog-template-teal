@@ -17,6 +17,7 @@ body {
 
 a {
     color: #009688;
+    word-break: normal;
 }
 
 a,
@@ -265,7 +266,7 @@ article header .meta {
 
 article p {
     line-height: 1.7em;
-    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 article pre,
@@ -283,6 +284,7 @@ article code {
     font-size: 85%;
     padding: 0.15rem;
     background-color: #eeeeee;
+    word-break: normal;
 }
 
 article pre code {
