@@ -247,6 +247,10 @@ aside {
 
 /* article elements */
 
+article .anchor {
+    scroll-margin-top: 56px;
+}
+
 article p.more {
     text-align: right;
     font-size: 0.85rem;

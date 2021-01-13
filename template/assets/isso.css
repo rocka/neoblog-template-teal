@@ -106,6 +106,7 @@
 
 .isso-thread .isso-comment {
     margin-top: 0.83rem;
+    scroll-margin-top: 56px;
     background-color: white;
 }
 
