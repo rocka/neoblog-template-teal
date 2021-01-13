@@ -1,7 +1,7 @@
 /*   global adjustment   */
 
 html {
-    font-family: Roboto, 'Noto Sans', 'Noto Sans CJK SC', 'Source Han Sans CN', 
+    font-family: Roboto, 'Noto Sans', 'Noto Sans CJK SC', 'Source Han Sans CN',
         'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
     font-size: 16px;
 }
@@ -32,7 +32,7 @@ a:hover {
 }
 
 code {
-    font-family: 'Roboto Mono', 'Fira Code', 'Monaco', 'Consolas', 
+    font-family: 'Roboto Mono', 'Fira Code', 'Monaco', 'Consolas',
         'Noto Sans Mono', 'Noto Mono', 'Droid Sans Mono', monospace;
 }
 
@@ -450,7 +450,7 @@ article hr {
     .pagination {
         margin: 1rem;
     }
-    
+
     .side-box {
         width: calc(100% - 2rem);
     }
