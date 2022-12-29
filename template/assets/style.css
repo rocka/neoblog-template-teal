@@ -24,11 +24,12 @@ a,
 a:link,
 a:visited {
     text-decoration: none;
-    transition: color 0.4s;
+    transition: color 0.3s;
 }
 
 a:hover {
     color: darkorange;
+    text-decoration: underline;
 }
 
 code {
