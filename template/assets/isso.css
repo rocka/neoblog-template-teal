@@ -261,42 +261,36 @@
 /* comment loader (* Hidden) */
 
 .isso-thread .isso-comment-loader {
-    margin: 0.83rem 0;
+    margin-top: 13px;
     text-align: center;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    background: white;
-    border-radius: 2px;
-    transition: background-color 0.2s;
-}
-
-.isso-thread .isso-comment-loader:hover {
-    background-color: #f5f5f5;
 }
 
 .isso-thread .isso-comment-loader a {
     display: block;
-    padding: 1rem;
 }
 
 .isso-thread .isso-comment-loader a::after {
     content: ' ';
     display: inline-block;
-    width: 0;
-    height: 0;
+    width: 8px;
+    height: 8px;
+    box-sizing: border-box;
     transform: rotate(-135deg);
     position: relative;
-    top: -3px;
-    right: -7px;
+    top: -4px;
+    right: -8px;
+    margin-left: -8px;
+    border-width: 2px;
     border-color: teal;
-    transition: 0.5s;
+    transition-duration: 0.3s;
+    transition-property: margin, border-color;
 }
 
 .isso-thread .isso-comment-loader a:hover::after {
-    width: 0.5rem;
-    height: 0.5rem;
-    box-sizing: content-box;
-    border-top: 2px solid darkorange;
-    border-left: 2px solid darkorange;
+    margin-left: 0;
+    border-color: darkorange;
+    border-top-style: solid;
+    border-left-style: solid;
 }
 
 @media screen and (max-width: 630px) {
