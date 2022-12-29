@@ -42,7 +42,7 @@ nav {
     position: fixed;
     right: 0;
     top: 0;
-    height: 3rem;
+    height: 48px;
     width: 100%;
     background-color: #009688;
     opacity: 0.9;
@@ -65,9 +65,9 @@ nav .nav-list,
 nav .nav-list .nav-link {
     display: inline-block;
     box-sizing: border-box;
-    line-height: 3rem;
+    height: 48px;
+    line-height: 48px;
     color: white;
-    height: 100%;
     padding: 0 1em;
     transition: background-color 0.4s;
 }
@@ -81,7 +81,7 @@ nav .nav-list .nav-link:hover {
 .header {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     width: 100%;
-    height: 22rem;
+    height: 360px;
     overflow: hidden;
     position: relative;
     background-color: teal;
@@ -93,7 +93,7 @@ nav .nav-list .nav-link:hover {
 .header .motto {
     position: relative;
     width: 1140px;
-    margin-top: 9rem;
+    margin-top: 150px;
     margin-left: calc(50% - 570px);
     margin-bottom: 0;
 }
@@ -111,7 +111,7 @@ nav .nav-list .nav-link:hover {
 
 .header .motto .lower {
     font-size: 1.4rem;
-    margin-top: 0.5rem;
+    margin-top: 10px;
 }
 
 /* elements under header */
@@ -133,7 +133,7 @@ main {
 }
 
 .tag-tip {
-    padding: 0.83rem;
+    padding: 13px;
     border-radius: 2px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     background-color: #009688;
@@ -145,10 +145,10 @@ main {
 /* something looks like `material paper` */
 
 .paper {
-    margin: 1.5rem 0;
+    margin: 24px 0;
     background-color: white;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    padding: 0.83rem;
+    padding: 13px;
     box-sizing: border-box;
     border-radius: 2px;
 }
@@ -160,11 +160,12 @@ main {
 /* bottom pagination, prev/next button */
 
 .pagination {
-    margin: 1.5rem 0;
+    margin: 0;
+    display: flex;
 }
 
 .pagination a {
-    display: inline-block;
+    margin-bottom: 24px;
     height: 40px;
     width: 40px;
     background-color: #009688;
@@ -177,8 +178,7 @@ main {
 }
 
 .pagination .next {
-    float: right;
-    margin-bottom: 1.5rem;
+    margin-left: auto;
 }
 
 /* side bar */
@@ -192,13 +192,15 @@ aside {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
     overflow: hidden;
-    margin: 1.5rem 0;
+    margin: 24px 0;
 }
 
 .side-box .side-box-header {
     background-color: #2ca499;
     color: white;
-    padding: 0.6rem 1rem;
+    padding: 0 1em;
+    height: 40px;
+    line-height: 40px;
     font-weight: bold;
 }
 
@@ -210,7 +212,9 @@ aside {
 }
 
 .side-box-item .side-box-item__inner {
-    padding: 0.4rem 1rem;
+    padding: 0 1em;
+    height: 34px;
+    line-height: 34px;
     color: inherit;
     white-space: nowrap;
     display: block;
@@ -229,9 +233,9 @@ aside {
 /* footer */
 
 .footer {
-    border-top: 0.5rem solid #2d2d2d;
+    border-top: 8px solid #2d2d2d;
     background-color: #1c1c1c;
-    padding: 1.5rem 0;
+    padding: 24px 0;
     font-size: 14px;
     color: #999;
 }
@@ -253,23 +257,23 @@ article .anchor {
 
 article p.more {
     text-align: right;
-    font-size: 0.85rem;
+    font-size: 14px;
     margin-bottom: 0;
 }
 
 article header .title {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 article header .meta {
     color: grey;
-    font-size: 0.9em;
+    font-size: 14px;
     margin: 0;
 }
 
 article p {
-    line-height: 1.7em;
+    line-height: 27px;
     overflow-wrap: break-word;
 }
 
@@ -277,16 +281,17 @@ article pre,
 article figure,
 article blockquote,
 article .table-wrapper {
-    margin: 1rem -0.83rem;
+    margin: 16px -13px;
 }
 
 article pre {
-    padding: 0.83rem 20px;
+    padding: 13px 20px;
 }
 
 article code {
     font-size: 85%;
-    padding: 0.15rem;
+    padding: 2px 4px;
+    border-radius: 2px;
     background-color: #eeeeee;
     word-break: normal;
 }
@@ -308,17 +313,17 @@ article figure img {
 }
 
 article figure figcaption {
-    line-height: 1.6rem;
-    font-size: 0.9rem;
+    line-height: 26px;
+    font-size: 14px;
     display: inline-block;
     text-align: center;
     color: grey;
     border-bottom: 1px solid lightgrey;
-    padding: 0 1rem;
+    padding: 0 1em;
 }
 
 article blockquote {
-    padding: 0.83rem 20px;
+    padding: 13px 20px;
     background-color: #eeeeee;
     border-left: 4px solid lightgrey;
 }
@@ -330,12 +335,12 @@ article blockquote p {
 article ul,
 article ol {
     padding: 0;
-    margin-left: 1.2rem;
+    padding-left: 1em;
 }
 
 article ul li,
 article ol li {
-    margin: 0.2rem 0;
+    line-height: 27px;
 }
 
 article .table-wrapper {
@@ -349,7 +354,7 @@ article table {
 
 article table th,
 article table td {
-    padding: 0.2em 1em;
+    padding: 3px 16px;
 }
 
 article table th {
@@ -366,7 +371,7 @@ article hr {
     background-color: #cccccc;
     border: none;
     height: 1.5px;
-    margin: 2rem auto;
+    margin: 36px auto;
     min-width: 175px;
     width: 25%;
 }
@@ -422,7 +427,7 @@ article hr {
     }
 
     .footer {
-        padding: 1.5rem 1rem;
+        padding: 24px 16px;
     }
 }
 
@@ -437,7 +442,7 @@ article hr {
     }
 
     .header .motto {
-        margin-left: 1rem;
+        margin-left: 16px;
     }
 
     main {
@@ -448,11 +453,11 @@ article hr {
     .paper,
     .side-box,
     .pagination {
-        margin: 1rem;
+        margin: 16px;
     }
 
     .side-box {
-        width: calc(100% - 2rem);
+        width: calc(100% - 32px);
     }
 
     .side-box,
@@ -460,8 +465,8 @@ article hr {
         margin-top: 0;
     }
 
-    .pagination .next {
-        margin-bottom: 1rem;
+    .pagination a {
+        margin-bottom: 0;
     }
 
     .footer .ft-content span::after {
