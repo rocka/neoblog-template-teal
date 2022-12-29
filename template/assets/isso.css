@@ -226,6 +226,10 @@
     margin-top: 0;
 }
 
+.isso-thread .isso-postbox .isso-preview .isso-comment p:empty:only-child {
+    margin: 0;
+}
+
 .isso-thread .isso-post-action:nth-child(4) {
     order: 1;
     margin-left: 0.5rem;
